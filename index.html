@@ -1,0 +1,124 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Classic Cars</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  min-height: 85vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+
+h1, h2, h3 {
+  color: #0056b3;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  background-color: #0056b3;
+  color: white;
+  min-height: 15vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    
+  }
+  .section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  .section:last-child {
+    margin-right: 0;
+  }
+
+  .contact-info {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <section class="section">
+    <h2>Welcome to Classic Cars</h2>
+    <p>Explore the world of classic race cars.  Discover iconic vehicles from motorsport history, each with unique specifications and captivating stories. We celebrate the engineering prowess, elegance, and raw power that defined a golden era of racing.</p>
+      <img src="https://res.cloudinary.com/dseiakb3q/image/upload/v1732892746/f5saz5txg8g2rp4le9co.jpg" alt="Classic Race Car">
+  </section>
+
+  <section class="section">
+    <h2>Featured Cars</h2>
+    <ul>
+      <li><strong>1967 Ford GT40:</strong> Renowned for its Le Mans victories, this iconic car epitomizes endurance and speed.</li>
+      <li><strong>1957 Jaguar D-Type:</strong> A masterpiece of aerodynamic design, the D-Type secured numerous racing triumphs.</li>
+      <li><strong>1970 Porsche 917:</strong> Known for its aggressive styling and incredible horsepower, the 917 is a legend of the track.</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Specifications</h2>
+    <p> Detailed specifications on our featured cars are coming soon.  We are working to provide precise details regarding engines, chassis, performance data, and more. Stay tuned!</p>
+  </section>
+</div>
+
+
+<footer class="footer">
+  <div class="contact-info">
+    <p>Phone: <a href="tel:+2547123456789">+2547123456789</a></p>
+    <p>Email: <a href="mailto:cars@mail.com">cars@mail.com</a></p>
+    <p>Address: Nairobi</p>
+  </div>
+  <p>&copy; 2024 Classic Cars</p>
+</footer>
+
+</body>
+</html>
+
+
